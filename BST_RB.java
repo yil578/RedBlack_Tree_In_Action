@@ -281,9 +281,6 @@ public class BST_RB<E extends Comparable <? super E>>
          //base case when the node is null
          if (node == null)
              return 0;
-         //base case when the node has no children 
-         if (node.left == null && node.right == null) 
-             return 1;
          //recursively adding up the nodes from left and right subtree (adding
          //an extra 1 is the node itself)
          return (numNodes(node.left) + numNodes(node.right) + 1);
